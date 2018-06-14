@@ -1,19 +1,14 @@
-<?php get_header(); ?>
+<?php get_header();?>
 
-	<main role="main">
-		<!-- section -->
-		<section>
 
-			<h1><?php _e( 'Latest Posts', 'html5blank' ); ?></h1>
+<section>
+    <img src="img/img.jpg" alt="Image">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, deleniti eum animi neque temporibus, laborum atque quibusdam! Earum non illum dicta beatae, similique quidem accusamus dolore! Autem ratione eos, vero!</p>
+</section>
 
-			<?php get_template_part('loop'); ?>
-
-			<?php get_template_part('pagination'); ?>
-
-		</section>
-		<!-- /section -->
-	</main>
-
-<?php get_sidebar(); ?>
+<article>
+    <img src="img/img.jpg" alt="Image">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id blanditiis facilis pariatur adipisci ducimus. In facilis, saepe commodi vero possimus adipisci doloribus. Obcaecati magnam reiciendis placeat ab necessitatibus numquam hic.</p>
+</article>
 
 <?php get_footer(); ?>
