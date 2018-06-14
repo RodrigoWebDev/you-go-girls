@@ -1,14 +1,25 @@
 <?php get_header();?>
 
+<aside class="sidebar">
+    <div class="container">
+        <?php get_search_form();?>
+        <?php get_sidebar();?>
+    </div>
+</aside>
 
-<section>
-    <img src="img/img.jpg" alt="Image">
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, deleniti eum animi neque temporibus, laborum atque quibusdam! Earum non illum dicta beatae, similique quidem accusamus dolore! Autem ratione eos, vero!</p>
+<section class="blog-posts">
+    <div class="container">
+        <?php 
+        if(have_posts()){
+            while(have_posts()){
+                the_post();
+                get_template_part("blog","post");
+            }
+        }
+    ?>
+    </div>
 </section>
 
-<article>
-    <img src="img/img.jpg" alt="Image">
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id blanditiis facilis pariatur adipisci ducimus. In facilis, saepe commodi vero possimus adipisci doloribus. Obcaecati magnam reiciendis placeat ab necessitatibus numquam hic.</p>
-</article>
+
 
 <?php get_footer(); ?>
