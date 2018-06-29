@@ -1,6 +1,6 @@
 <footer>
    <div class="container">
-       <p>Copyright &copy; 2018</p>
+       <p>© 2018 You Go Girls – Todos os direitos reservados.</p>
    </div>
     
 </footer>

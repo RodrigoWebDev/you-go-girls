@@ -12,30 +12,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="<?php bloginfo('description'); ?>">
     <?php wp_head(); ?>
-    <style>
-        section,
-        article,
-        nav,
-        aside {
-            padding: 30px 0;
-        }
-
-    </style>
 </head>
 
-<nav class="navbar navbar-expand-md navbar-light bg-light">
+<nav class="navbar navbar-expand-md">
     <div class="container">
-        <a class="navbar-brand" href="#">Navbar</a>
+       <a class="navbar-brand" href="#"><img class="hvr-bounce-to-top" src="<?php echo get_template_directory_uri() . '/img/logo.png' ?>" alt="You go girls"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+            <i class="fas fa-bars"></i>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+       <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <?php wp_nav_menu(array(
-                "menu_class" => "navbar-nav ml-auto",
+                "menu_class" => "navbar-nav",
                 "container" => "ul",
                 "container_class" => "navbar-nav ml-auto",
                 "theme_location" => "meu-menu",
             ));?>
+            <ul class="navbar__social">
+                <a class="hvr-bounce-to-top hvr-bounce-to-top--facebook" href="https://www.facebook.com/yougogirlsoficial/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a class="hvr-bounce-to-top hvr-bounce-to-top--twitter" href="https://twitter.com/yougogirls_" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a class="hvr-bounce-to-top hvr-bounce-to-top--instagram" href="https://www.instagram.com/yougogirlsoficial/" target="_blank"><i class="fab fa-instagram"></i></a>
+            </ul>
+            <button class="navbar-toggler toggler-up" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fas fa-angle-up"></i>
+            </button>
         </div>
     </div>
+
 </nav>
