@@ -1,0 +1,104 @@
+// ##################### Sobre HERO #####################
+.sobre-hero {
+    background: url(../img/bg.png);
+    background-size: cover;
+    padding-top: 150px;
+    padding-bottom: 150px;
+    .container {
+        display: flex;
+        height: 400px;
+        div:first-child {
+            flex-basis: 45%;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            h1 {
+                text-align: right;
+                font-size: 80px;
+                font-weight: bolder;
+            }
+        }
+        div:nth-child(2) {
+            flex-basis: 10%;
+        }
+        div:last-child {
+            flex-basis: 45%;
+            display: flex;
+            align-items: center;
+
+        }
+    }
+    .vertical-line-container {
+        position: relative;
+        .vertical-line {
+            position: absolute;
+            height: 100%;
+            border-left: 1px solid $primary-color;
+            left: 50%;
+        }
+    }
+
+}
+
+// ##################### AUTORES #####################
+
+.autores {
+    margin-top: 80px;
+    .container {
+        max-width: 800px;
+    }
+    .autor {
+        display: flex;
+        .autor__title {
+            display: flex;
+            h2 {
+                background: $primary-color;
+                padding: 10px 40px;
+                display: inline-block;
+            }
+        }
+        .social-icons-post {
+            display: flex;
+            a {
+                margin-right: 20px;
+                color: $text-color;
+                i {
+                    border-radius: 50%;
+                    width: 50px;
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+    .autor:nth-of-type(even) {
+        flex-direction: row-reverse;
+        p {
+            margin-right: 20px;
+        }
+        .autor__title {
+            justify-content: flex-end;
+        }
+        .social-icons-post {
+            justify-content: flex-end;
+        }
+    }
+
+    .autor:nth-of-type(odd) {
+        flex-direction: row;
+        p {
+            margin-left: 20px;
+        }
+    }
+
+    hr {
+        width: 300px;
+        margin: 80px auto;
+    }
+
+    .visual-title {
+        h2 {
+            color: $text-color;
+        }
+    }
+}

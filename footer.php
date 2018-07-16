@@ -1,6 +1,10 @@
 <footer>
    <div class="container">
-       <p>© 2018 You Go Girls – Todos os direitos reservados.</p>
+      <?php 
+        if(is_active_sidebar("footer")){
+            dynamic_sidebar("footer");
+        }
+       ?>
    </div>
     
 </footer>

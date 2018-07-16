@@ -1,0 +1,138 @@
+// ##################### 768px #####################
+@media (max-width:768px) {
+    .hero {
+        .title--absolute {
+            position: static;
+            font-size: 50px;
+            padding-top: 100px;
+        }
+        .hero__inner {
+            padding: 100px 0;
+        }
+    }
+
+    .navbar {
+        .navbar-collapse {
+            @include bg-opacity();
+            @include absolute-top-left();
+            font-size: 30px;
+            .navbar-nav {
+                a {
+                    display: block;
+                    padding: 10px 0;
+                }
+                li {
+                    border-bottom: none;
+                }
+            }
+            .navbar__social {
+                margin-top: 20px;
+            }
+            a:hover {
+                text-decoration: none;
+            }
+        }
+    }
+
+
+    .blog-posts {
+        .post {
+            margin-bottom: 30px;
+        }
+        .col-md-8 {
+            .post {
+                a:last-of-type {
+                    width: 100%;
+                    h2 {
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+
+    .sobre-hero {
+        .container {
+            flex-direction: column;
+            div:first-child {
+                flex-basis: 100%;
+                justify-content: center;
+            }
+            div:nth-child(2) {
+                .vertical-line {
+                    display: none;
+                }
+            }
+            div:last-child {
+                flex-basis: 100%;
+            }
+        }
+
+        .vertical-line {
+            display: none;
+        }
+    }
+
+    .autores {
+        .autor {
+            flex-direction: column !important;
+            img {
+                display: block;
+                margin: 0 auto !important;
+                max-width: 100%;
+                height: auto;
+            }
+            h2 {
+                text-align: center;
+                margin-top: 20px;
+            }
+            .autor__title,
+            .social-icons-post {
+                justify-content: center !important;
+            }
+        }
+    }
+}
+
+// ##################### 678px #####################
+@media(max-width:678px) {
+    .hero {
+        .title--absolute {
+            padding-top: 200px;
+        }
+    }
+    .blog-posts {
+        .row {
+            padding-top: 0 !important;
+        }
+    }
+}
+
+// ##################### 991px #####################
+@media (max-width:991px) {
+    .navbar {
+        .site-icon {
+            width: 25px !important;
+            height: 25px !important;
+        }
+    }
+}
+
+// ##################### 1088px #####################
+@media(max-width:1088px) {
+    .blog-posts {
+        .container {
+            > .row:first-child {
+                padding-top: 0;
+            }
+        }
+    }
+}
+
+// ##################### 1178px #####################
+@media(min-width:1178px) {
+    .hero .hero__inner {
+        padding: 400px 0;
+    }
+}
+

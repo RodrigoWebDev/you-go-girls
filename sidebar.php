@@ -1,5 +1,5 @@
 <?php 
-    if(is_active_sidebar("sidebar-blog")){
-        dynamic_sidebar("sidebar-blog");
+    if(is_active_sidebar("barra-lateral")){
+        dynamic_sidebar("barra-lateral");
     }
 ?>

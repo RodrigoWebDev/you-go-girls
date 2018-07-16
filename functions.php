@@ -24,14 +24,60 @@ register_nav_menus(
 if(function_exists("register_sidebar")){
     register_sidebar(
         array(
-            "name" => "Barra lateral",
-            "id" => "sidebar-blog",
-            "description" => "Barra lateral do blog",
+            "name" => "Destaque do mês",
+            "id" => "destaque-do-mes",
+            "description" => "Destaque do mês",
             "before-widget" => "<div class='widget-container'>",
             "after-widget" => "</div>",
             "before-title" => "<h2 class='widget__title'>",
             "after-title" => "</h2>",
         )
     );
+    register_sidebar(
+        array(
+            "name" => "Descrição sobre",
+            "id" => "sobre-descricao",
+            "description" => "Descrição da pagina sobre que aparece do lado do título",
+            "before-widget" => "<div class='widget-descricao-sobre'>",
+            "after-widget" => "</div>",
+            "before-title" => "<h2 class='widget__title'>",
+            "after-title" => "</h2>",
+        )
+    );
+    register_sidebar(
+        array(
+            "name" => "Footer",
+            "id" => "footer",
+            "description" => "Informações do footer",
+            "before-widget" => "<div class='widget-footer'>",
+            "after-widget" => "</div>",
+            "before-title" => "<h2 class='widget-footer__title'>",
+            "after-title" => "</h2>",
+        )
+    );
+    register_sidebar(
+        array(
+            "name" => "Redes Sociais",
+            "id" => "redes-sociais",
+            "description" => "Suas redes sociais",
+            "before-widget" => "<div class='widget-social-media'>",
+            "after-widget" => "</div>",
+            "before-title" => "<h2 class='widget-social-media__title'>",
+            "after-title" => "</h2>",
+        )
+    );
+    register_sidebar(
+        array(
+            "name" => "Barra Lateral do Blog",
+            "id" => "barra-lateral",
+            "description" => "Barra Lateral do Blog",
+            "before-widget" => "<div class='widget-blog'>",
+            "after-widget" => "</div>",
+            "before-title" => "<h2 class='widget-blog__title'>",
+            "after-title" => "</h2>",
+        )
+    );
 }
+
+
 ?>

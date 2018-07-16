@@ -27,11 +27,11 @@
                 "container_class" => "navbar-nav ml-auto",
                 "theme_location" => "meu-menu",
             ));?>
-            <ul class="navbar__social">
-                <a class="hvr-bounce-to-top hvr-bounce-to-top--facebook" href="https://www.facebook.com/yougogirlsoficial/" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                <a class="hvr-bounce-to-top hvr-bounce-to-top--twitter" href="https://twitter.com/yougogirls_" target="_blank"><i class="fab fa-twitter"></i></a>
-                <a class="hvr-bounce-to-top hvr-bounce-to-top--instagram" href="https://www.instagram.com/yougogirlsoficial/" target="_blank"><i class="fab fa-instagram"></i></a>
-            </ul>
+            <?php 
+                if(is_active_sidebar("redes-sociais")){
+                    dynamic_sidebar("redes-sociais");
+                }
+            ?>
             <button class="navbar-toggler toggler-up" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <i class="fas fa-angle-up"></i>
             </button>

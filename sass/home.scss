@@ -1,0 +1,101 @@
+//##################### home HERO #####################
+.hero {
+    background: url(../img/hero-bg.png) no-repeat;
+    background-size: contain;
+    position: relative;
+    .title--absolute {
+        position: absolute;
+        bottom: 170px;
+        left: 26%;
+    }
+    .hero__inner {
+        padding: 350px 0;
+    }
+}
+
+//##################### Home news #####################
+.home-news {
+    .container {
+        > .row:first-child {
+            padding: {
+                top: 100px;
+                bottom: 30px;
+            }
+            h2 {
+                color: $primary-color;
+                text-align: center;
+                text-transform: uppercase;
+            }
+
+        }
+        .row:nth-child(2) {
+            padding: 10px 0;
+        }
+    }
+
+    .col-md-4 {
+        > div:first-child {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100%;
+        }
+        a {
+            text-align: center;
+            width: 100%;
+            left: 0 !important;
+        }
+    }
+
+    .col-md-8 {
+        h2 {
+            text-align: left;
+        }
+    }
+
+    .post {
+        position: relative;
+        h2 {
+            color: $text-color;
+        }
+
+        a:hover {
+            text-decoration: none;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+
+        > a:nth-child(3) {
+            position: absolute;
+            bottom: 0;
+            left: 10px;
+        }
+
+        .col-md-12 {
+            h2 {
+                text-align: center;
+            }
+        }
+
+        .overlayer {
+            position: absolute;
+            background: url(../img/plus.png);
+            background-size: cover;
+            background-position: center center;
+            opacity: .8;
+            height: 100%;
+            width: 100%;
+        }
+    }
+}
+
+
+// ##################### Home Posts #####################
+.home-posts {
+    h2 {
+        font-weight: bolder;
+    }
+}

@@ -1,0 +1,60 @@
+// ##################### Blog #####################
+.visual-title-pages--blog {
+    background: $primary-color;
+}
+
+.visual-title-pages--csgo {
+    background: $color-blue;
+}
+
+
+.sidebar-blog {
+    form {
+        margin-left: 0;
+        margin-bottom: 80px;
+    }
+    .widget_categories {
+        h2 {
+            text-align: left;
+        }
+        li {
+            list-style: disc;
+            margin-left: 30px;
+        }
+    }
+
+}
+
+// ##################### Single #####################
+
+.single{
+    margin-top: 200px;
+    .single__header{
+        h1{
+            font-weight: bolder;
+            text-align: center;
+            font-size: 50px;
+        }
+    }
+    .single__thumb{
+        margin-bottom: 80px;
+        img{
+            object-fit: cover;
+            object-position: center;
+            max-height: 300px;
+            display: block;
+            margin: 0 auto;
+        }
+    }
+    .single__content{
+        max-width: 800px;
+        margin: 0 auto;
+        h1,h2,h3,h4,h5,h6{
+            font-weight: bolder;
+            color:$primary-color;
+            margin: 2rem 0;
+        }
+    }
+}
+
+
