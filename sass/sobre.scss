@@ -49,12 +49,25 @@
     }
     .autor {
         display: flex;
+        .autor__img{
+            flex-basis:30%;
+            img{
+                width:100%;
+                height:auto;
+                max-width:300px;
+            }
+        }
+        
+        .autor__content{
+            flex-basis:70%;
+        }
         .autor__title {
             display: flex;
             h2 {
                 background: $primary-color;
                 padding: 10px 40px;
                 display: inline-block;
+                font-weight:bolder;
             }
         }
         .social-icons-post {

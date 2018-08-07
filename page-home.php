@@ -92,7 +92,7 @@
         </div>
 
         <div class="col-md-4">
-            <aside>
+            <aside class="sidebar">
                 <?php get_search_form(); ?>
                 <h2>Wpcupgirls</h2>
                 <hr>
