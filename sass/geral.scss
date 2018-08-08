@@ -300,12 +300,37 @@ a:hover {
             margin-bottom: 0;
         }
     }
+    
+    .sub-menu{
+        display:none;
+        position: absolute;
+        background: rgba(0,0,0,.5);
+        left: -30px;
+        li{
+            width:100%;
+            a{
+                display:block;
+                padding:10px 20px;
+            }
+            a:hover{
+                opacity:.5;
+                transition:.2s;
+            }
+        }
+    }
 
     .navbar-nav {
-        li {
-            padding: 5px 20px;
+        >li{
             margin: 0 15px;
-            border-bottom: 3px solid $primary-color;
+            >a{
+                border-bottom: 3px solid $primary-color;
+            }
+        }
+        li {
+            position:relative;
+            a{
+                padding: 5px 20px;
+            }
             a:hover {
                 text-decoration: none;
             }
@@ -379,3 +404,41 @@ footer {
         padding: 20px;
     }
 }
+
+.times{
+    img{
+        border:none !important;
+    }
+}
+
+.visual-title-pages--times{
+    background:#662d91;
+}
+
+.contato{
+    .wpcf7-form{
+        p:nth-of-type(1){
+            width: 50%;
+            float: left;
+            padding-right: 50px;
+        }
+        p:nth-of-type(2){
+            width: 50%;
+            float: left;
+            padding-left: 50px;
+        }
+    }
+    
+    input,textarea{
+        border: none;
+    }
+    
+    .elementor-widget-wrap{
+        margin-top: 230px;
+    }
+}
+
+.page-id-169{
+    background: url(../img/contato-bg.png);
+}
+

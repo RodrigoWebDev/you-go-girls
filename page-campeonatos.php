@@ -6,7 +6,7 @@
                 <hr>
             </div>
             <div class="col-4 col-lg-2">
-                <h2 class="h2-title">Campeonatos</h2>
+                <h2 class="h2-title"><?php the_title()?></h2>
             </div>
             <div class="col-4 col-lg-5">
                 <hr>
